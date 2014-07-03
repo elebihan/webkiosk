@@ -51,9 +51,9 @@ ApplicationWindow {
             onLoadingChanged: {
                 switch (loadRequest.status) {
                     case WebView.LoadSucceededStatus:
+                    case WebView.LoadFailedStatus:
                         opacity = 1
                         break
-
                     default:
                     opacity = 0
                     break
